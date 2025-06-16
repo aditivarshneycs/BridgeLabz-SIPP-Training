@@ -1,0 +1,313 @@
+// Question 1: Convert kilometers to miles
+import java.util.Scanner;
+class Q1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter distance in kilometers: ");
+        double km = input.nextDouble();
+        double miles = km / 1.6;
+        System.out.println("The total miles is " + miles + " mile for the given " + km + " km");
+    }
+}
+
+// Question 2: Compute volume of Earth
+class Q2 {
+    public static void main(String[] args) {
+        double radius = 6378;
+        double volumeKm = (4.0/3) * Math.PI * Math.pow(radius, 3);
+        double volumeMiles = volumeKm / Math.pow(1.6, 3);
+        System.out.println("The volume of earth in cubic kilometers is " + volumeKm + " and cubic miles is " + volumeMiles);
+    }
+}
+
+// Question 3: Discounted course fee
+class Q3 {
+    public static void main(String[] args) {
+        double fee = 125000;
+        double discountPercent = 10;
+        double discount = (discountPercent / 100) * fee;
+        double discountedFee = fee - discount;
+        System.out.println("The discount amount is INR " + discount + " and final discounted fee is INR " + discountedFee);
+    }
+}
+
+// Question 4: Profit and loss
+class Q4 {
+    public static void main(String[] args) {
+        double cp = 129, sp = 191;
+        double profit = sp - cp;
+        double profitPercent = (profit / cp) * 100;
+        System.out.println("The Cost Price is INR " + cp + " and the Selling Price is INR " + sp + "\nThe Profit is INR " + profit + " and the Profit Percentage is " + profitPercent);
+    }
+}
+
+// Question 5: Pen distribution
+class Q5 {
+    public static void main(String[] args) {
+        int pens = 14, students = 3;
+        int each = pens / students;
+        int rem = pens % students;
+        System.out.println("The Pen Per Student is " + each + " and the remaining pen not distributed is " + rem);
+    }
+}
+
+// Question 6: 10.8 km to miles
+class Q6 {
+    public static void main(String[] args) {
+        double km = 10.8;
+        double miles = km / 1.6;
+        System.out.println("The distance " + km + " km in miles is " + miles);
+    }
+}
+
+// Question 7: Fee and discount from user
+class Q7 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double fee = input.nextDouble();
+        double discountPercent = input.nextDouble();
+        double discount = (discountPercent / 100) * fee;
+        double discountedFee = fee - discount;
+        System.out.println("The discount amount is INR " + discount + " and final discounted fee is INR " + discountedFee);
+    }
+}
+
+// Question 8: Average in PCM
+class Q8 {
+    public static void main(String[] args) {
+        int maths = 94, physics = 95, chemistry = 96;
+        double avg = (maths + physics + chemistry) / 3.0;
+        System.out.println("Sam’s average mark in PCM is " + avg);
+    }
+}
+
+// Question 9: Height in feet and inches
+class Q9 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double cm = input.nextDouble();
+        double inches = cm / 2.54;
+        double feet = inches / 12;
+        System.out.println("Your Height in cm is " + cm + " while in feet is " + (int)feet + " and inches is " + inches);
+    }
+}
+
+// Question 10: Age of Harry
+class Q10 {
+    public static void main(String[] args) {
+        int birthYear = 2000;
+        int currentYear = 2024;
+        int age = currentYear - birthYear;
+        System.out.println("Harry's age in 2024 is " + age);
+    }
+}
+
+// Question 11: Feet to yards and miles
+class Q11 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double feet = input.nextDouble();
+        double yards = feet / 3;
+        double miles = yards / 1760;
+        System.out.println("The distance in yards is " + yards + " while the distance in miles is " + miles);
+    }
+}
+
+// Question 12: Area of triangle
+class Q12 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double base = input.nextDouble();
+        double height = input.nextDouble();
+        double areaCM = 0.5 * base * height;
+        double areaInches = areaCM / (2.54 * 2.54);
+        System.out.println("The Area of the triangle in sq in is " + areaInches + " and sq cm is " + areaCM);
+    }
+}
+
+// Question 13: Basic calculator
+class Q13 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        System.out.println("Division: " + (a / b));
+    }
+}
+
+// Question 14: Side of square from perimeter
+class Q14 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double perimeter = input.nextDouble();
+        double side = perimeter / 4;
+        System.out.println("The length of the side is " + side + " whose perimeter is " + perimeter);
+    }
+}
+
+// Due to message length limits, we will continue the rest in the next batch...
+
+
+
+// Question 15: Integer operations
+class Q15 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
+        System.out.println("Results: " + (a + b * c) + ", " + (a * b + c) + ", " + (c + a / b) + ", " + (a % b + c));
+    }
+}
+
+// Question 16: Double operations
+class Q16 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+        System.out.println("Results: " + (a + b * c) + ", " + (a * b + c) + ", " + (c + a / b) + ", " + (a % b + c));
+    }
+}
+
+// Question 17: Total purchase price
+class Q17 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double unitPrice = input.nextDouble();
+        int quantity = input.nextInt();
+        double total = unitPrice * quantity;
+        System.out.println("The total purchase price is INR " + total + " if the quantity " + quantity + " and the unit price is INR " + unitPrice);
+    }
+}
+
+// Question 18: Quotient and remainder
+class Q18 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int number1 = input.nextInt();
+        int number2 = input.nextInt();
+        System.out.println("The Quotient is " + (number1 / number2) + " and Reminder is " + (number1 % number2));
+    }
+}
+
+// Question 19: Swap two numbers
+class Q19 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int number1 = input.nextInt();
+        int number2 = input.nextInt();
+        int temp = number1;
+        number1 = number2;
+        number2 = temp;
+        System.out.println("The swapped numbers are " + number1 + " and " + number2);
+    }
+}
+
+// Question 20: Celsius to Fahrenheit
+class Q20 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double celsius = input.nextDouble();
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        System.out.println("The " + celsius + " celsius is " + fahrenheit + " fahrenheit");
+    }
+}
+
+// Question 21: Pounds to kilograms
+class Q21 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double pounds = input.nextDouble();
+        double kg = pounds / 2.2;
+        System.out.println("The weight of the person in pounds is " + pounds + " and in kg is " + kg);
+    }
+}
+
+// Question 22: Divide chocolates
+class Q22 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int chocolates = input.nextInt();
+        int children = input.nextInt();
+        System.out.println("Each child gets " + (chocolates / children) + " chocolates and remaining chocolates are " + (chocolates % children));
+    }
+}
+
+// Question 23: Maximum handshakes
+class Q23 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int handshakes = (n * (n - 1)) / 2;
+        System.out.println("The number of possible handshakes is " + handshakes);
+    }
+}
+
+// Question 24: Triangular run rounds
+class Q24 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double s1 = input.nextDouble();
+        double s2 = input.nextDouble();
+        double s3 = input.nextDouble();
+        double perimeter = s1 + s2 + s3;
+        double rounds = 5000 / perimeter;
+        System.out.println("The total number of rounds the athlete will run is " + rounds + " to complete 5 km");
+    }
+}
+
+// Question 25: Travel distance and time
+class Q25 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String name = input.nextLine();
+        String fromCity = input.nextLine();
+        String viaCity = input.nextLine();
+        String toCity = input.nextLine();
+        double fromToVia = input.nextDouble();
+        double viaToFinal = input.nextDouble();
+        double time1 = input.nextDouble();
+        double time2 = input.nextDouble();
+        double totalDistance = fromToVia + viaToFinal;
+        double totalTime = time1 + time2;
+        System.out.println("The Total Distance travelled by " + name + " from " + fromCity + " to " + toCity + " via " + viaCity + " is " + totalDistance + " km and the Total Time taken is " + totalTime + " minutes");
+    }
+}
+
+// Question 26: Total income
+class Q26 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double salary = input.nextDouble();
+        double bonus = input.nextDouble();
+        double income = salary + bonus;
+        System.out.println("The salary is INR " + salary + " and the bonus is INR " + bonus + ". Hence Total Income is INR " + income);
+    }
+}
+
+// Question 27: Fahrenheit to Celsius
+class Q27 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double fahrenheit = input.nextDouble();
+        double celsius = (fahrenheit - 32) * 5 / 9;
+        System.out.println("The " + fahrenheit + " fahrenheit is " + celsius + " celsius");
+    }
+}
+
+// Question 28: Simple interest
+class Q28 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double principal = input.nextDouble();
+        double rate = input.nextDouble();
+        double time = input.nextDouble();
+        double si = (principal * rate * time) / 100;
+        System.out.println("The Simple Interest is " + si + " for Principal " + principal + ", Rate of Interest " + rate + " and Time " + time);
+    }
+}
